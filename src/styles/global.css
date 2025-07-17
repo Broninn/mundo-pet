@@ -1,0 +1,14 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* CONTENT */
+    --content-primary: #FFFFFF;
+    --content-secondary: #98959D;
+    --content-tertiary: #666666;
+    --content-brand: #9282FA;
+
+}
