@@ -9,10 +9,103 @@
       href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="src/assets/Pet-Paw.svg">
+    <link rel="icon" href="src/assets/Pet-Paw.svg" />
     <title>Mundo PET</title>
   </head>
   <body>
-    PET
+    <div class="container">
+      <img src="./src/assets/logo.svg" alt="Logo" class="logo" />
+
+      <main class="main">
+        <header>
+          <div>
+            <h1>Sua agenda</h1>
+            <p>
+              Aqui você pode ver todos os clientes e serviços agendados para o
+              dia de hoje
+            </p>
+          </div>
+          <div class="input">
+            <i><img src="src/assets/Calendar.svg" alt="Calendário" /></i>
+            <input type="date" name="date" id="date" required />
+          </div>
+        </header>
+      </main>
+      <aside>
+        <section class="schedule-period">
+          <header>
+            <img src="src/assets/Sun-Fog.svg" alt="Manhã" />
+            <strong>Manhã</strong>
+            <span>09h-12h</span>
+          </header>
+          <ul id="period-morning" class="period">
+            <li>
+              <strong>09:00</strong>
+              <div class="names">
+                <span class="animal-name">Thor</span>
+                <span class="human-name">Fernanda Costa</span>
+              </div>
+              <span>Vacinação</span>
+              <a href="#" class="cancel-schedule">Remover Agendamento</a>
+            </li>
+          </ul>
+        </section>
+        <section class="schedule-period">
+          <header>
+            <img src="src/assets/Cloud-Sun.svg" alt="Tarde" />
+            <strong>Tarde</strong>
+            <span>13h-18h</span>
+          </header>
+          <ul id="period-afternoon" class="period">
+            <li>
+              <strong>13:00</strong>
+              <div class="names">
+                <span class="animal-name">Mel</span>
+                <span class="human-name">João Souza</span>
+              </div>
+              <span>Corte de unhas</span>
+              <a href="#" class="cancel-schedule">Remover Agendamento</a>
+            </li>
+            <li>
+              <strong>14:00</strong>
+              <div class="names">
+                <span class="animal-name">Bella</span>
+                <span class="human-name">Pedro Martins</span>
+              </div>
+              <span>Aplicação de anti pulgas</span>
+              <a href="#" class="cancel-schedule">Remover Agendamento</a>
+            </li>
+            <li>
+              <strong>15:00</strong>
+              <div class="names">
+                <span class="animal-name">Simba</span>
+                <span class="human-name">Juliana Rocha</span>
+              </div>
+              <span>Tosa Higiênica</span>
+              <a href="#" class="cancel-schedule">Remover Agendamento</a>
+            </li>
+          </ul>
+        </section>
+        <section class="schedule-period">
+          <header>
+            <img src="src/assets/Moon-Stars.svg" alt="Manhã" />
+            <strong>Noite</strong>
+            <span>19h-21h</span>
+          </header>
+          <ul id="period-morning" class="period">
+            <li>
+              <strong>20:00</strong>
+              <div class="names">
+                <span class="animal-name">Max</span>
+                <span class="human-name">Camila Santos</span>
+              </div>
+              <span>Limpeza de dentes</span>
+              <a href="#" class="cancel-schedule">Remover Agendamento</a>
+            </li>
+          </ul>
+        </section>
+        <button class="open-modal">NOVO AGENDAMENTO</button>
+      </aside>
+    </div>
   </body>
 </html>

@@ -1,0 +1,118 @@
+aside {
+  margin-bottom: 5rem;
+  & section {
+    background-color: var(--background-tertiary);
+    border-radius: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    & header {
+      display: flex;
+      gap: 0.75rem;
+      flex-direction: row;
+      width: 100%;
+      padding: 0.75rem 1.25rem;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      border-bottom-color: #2e2c30;
+
+      & span {
+        color: var(--content-secondary);
+      }
+
+      & :last-child {
+        margin-left: auto;
+      }
+    }
+    & ul {
+      list-style: none;
+      width: 100%;
+      & li {
+        display: grid;
+        grid-template-columns: 80px 1fr 1fr auto;
+        gap: 0.75rem;
+        padding: 2rem;
+        color: var(--content-secondary);
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: #2e2c30;
+
+        &:last-child {
+          border: none;
+        }
+
+        & strong {
+          color: var(--content-primary);
+          font-size: var(--fs-md);
+          grid-area: A;
+        }
+        & .names {
+          font-size: var(--fs-md);
+          grid-area: B;
+          & .animal-name {
+            color: var(--content-primary);
+          }
+        }
+        & span {
+          font-size: var(--fs-md);
+          grid-area: C;
+        }
+
+        & a {
+          list-style: none;
+          font-size: var(--fs-md);
+          text-decoration: none;
+          color: var(--content-secondary);
+          grid-area: D;
+          &:hover {
+            color: var(--background-highlights);
+          }
+        }
+      }
+    }
+  }
+  & .open-modal {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1000;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--background-brand);
+    padding: 0.75rem;
+    font-family: var(--intertight);
+    font-weight: var(--bold);
+    font-size: var(--fs-lg);
+    transition: background 0.3s ease;
+    &:hover {
+      background-color: var(--background-highlights);
+    }
+  }
+}
+@media (max-width: 1100px) {
+  aside {
+    & section {
+      & ul {
+        & li {
+          grid-template-areas:
+            "A B B B"
+            "C C C C"
+            "E E D D";
+          grid-gap: 10px;
+          & strong,
+          & .names,
+          & span,
+          & a {
+            font-size: var(--fs-sm);
+          }
+        }
+      }
+    }
+    & .open-modal {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

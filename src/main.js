@@ -2,4 +2,5 @@
 
 // CSS
 import "./styles/global.css"
-import "./styles/form.css"
+import "./styles/main.css"
+import "./styles/aside.css"
