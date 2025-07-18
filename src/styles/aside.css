@@ -45,18 +45,15 @@ aside {
         & strong {
           color: var(--content-primary);
           font-size: var(--fs-md);
-          grid-area: A;
         }
         & .names {
           font-size: var(--fs-md);
-          grid-area: B;
           & .animal-name {
             color: var(--content-primary);
           }
         }
         & span {
           font-size: var(--fs-md);
-          grid-area: C;
         }
 
         & a {
@@ -64,7 +61,6 @@ aside {
           font-size: var(--fs-md);
           text-decoration: none;
           color: var(--content-secondary);
-          grid-area: D;
           &:hover {
             color: var(--background-highlights);
           }
@@ -106,6 +102,19 @@ aside {
           & span,
           & a {
             font-size: var(--fs-sm);
+          }
+          & strong {
+            grid-area: A;
+          }
+          & .names {
+            grid-area: B;
+          }
+          & span {
+            grid-area: C;
+          }
+
+          & a {
+            grid-area: D;
           }
         }
       }

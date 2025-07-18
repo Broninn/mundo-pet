@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="icon" href="src/assets/Pet-Paw.svg" />
+
     <title>Mundo PET</title>
   </head>
   <body>
@@ -106,6 +107,106 @@
         </section>
         <button class="open-modal">NOVO AGENDAMENTO</button>
       </aside>
+      <div class="modal" id="schedule-modal" aria-hidden="true">
+        <div class="modal-overlay" data-close-modal></div>
+        <div
+          class="modal-content"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modal-title"
+        >
+          <form>
+            <header>
+              <h2 id="modal-title">Agende um atendimento</h2>
+              <p>Preencha os dados do cliente para realizar o agendamento:</p>
+            </header>
+            <div class="info-name">
+              <p>Nome do tutor</p>
+              <div>
+                <img src="src/assets/User.svg" alt="" />
+
+                <input
+                  type="text"
+                  name="input-client-name"
+                  id="input-client-name"
+                  placeholder="Digite o nome do cliente"
+                />
+              </div>
+            </div>
+            <div class="info-name">
+              <p>Nome do pet</p>
+              <div>
+                <img src="src/assets/Pet-Paw.svg" alt="" />
+
+                <input
+                  type="text"
+                  name="input-pet-name"
+                  id="input-pet-name"
+                  placeholder="Digite o nome do pet"
+                />
+              </div>
+            </div>
+            <div class="info-name">
+              <p>Telefone</p>
+              <div>
+                <img src="src/assets/Phone.svg" alt="" />
+
+                <input
+                  type="text"
+                  name="input-phone-name"
+                  id="input-phone-name"
+                  placeholder="(00) 00000-0000"
+                />
+              </div>
+            </div>
+            <div class="info-name">
+              <p>Descrição do serviço</p>
+              <div>
+                <input
+                  type="text"
+                  name="input-service-name"
+                  id="input-service-name"
+                  placeholder="Ex: Banho e tosa"
+                />
+              </div>
+            </div>
+            <div class="info-name date">
+              <div>
+                <label for="date" class="label">Data</label>
+                <div class="input">
+                  <i><img src="./src/assets/calendar.svg" alt="Calendário" /></i>
+                  <input type="date" id="date" name="date" required />
+                </div>
+              </div>
+              <div>
+                <label for="time" class="label">Hora</label>
+                <div class="input">
+                  <i><img src="./src/assets/Clock-Circle.svg" alt="Relógio" /></i>
+                  <input type="time" id="time" name="time" required />
+                </div>
+              </div>
+            </div>
+            <button class="close-modal" data-close-modal>Fechar</button>
+          </form>
+        </div>
+      </div>
     </div>
+    <script>
+      document.querySelector(".open-modal").addEventListener("click", () => {
+        document
+          .getElementById("schedule-modal")
+          .setAttribute("aria-hidden", "false");
+      });
+
+      document.querySelectorAll("[data-close-modal]").forEach((el) => {
+        el.addEventListener("click", () => {
+          document
+            .getElementById("schedule-modal")
+            .setAttribute("aria-hidden", "true");
+        });
+      });
+
+      
+    </script>
   </body>
 </html>
