@@ -115,6 +115,7 @@ aside {
 
           & a {
             grid-area: D;
+            font-size: .625rem;
           }
         }
       }

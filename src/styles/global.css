@@ -51,6 +51,10 @@ body {
   justify-content: center;
 }
 
+body.container {
+  overflow: hidden;
+}
+
 .container {
   display: flex;
   flex-direction: column;

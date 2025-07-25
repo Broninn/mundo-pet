@@ -1,7 +1,8 @@
 #schedule-modal {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.2);
   display: none;
   align-items: center;
   justify-content: center;
@@ -15,11 +16,14 @@
     border-radius: 1rem;
     max-width: 500px;
     width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     & .close-modal {
       margin-top: 1rem;
       background: var(--background-brand);
-      color: white;
+      color: var(--background-primary);
+      font-weight: var(--bold);
       padding: 0.5rem 1rem;
       border: none;
       border-radius: 0.5rem;
@@ -63,6 +67,26 @@
         & p {
           margin-bottom: 0.5rem;
         }
+        & #time {
+          background-color: transparent;
+          color: var(--content-primary);
+          font-size: var(--fs-md);
+          border: none;
+          outline: none;
+          width: 100%;
+          cursor: pointer;
+        }
+
+        /* Estilo para o "placeholder" do select */
+        & #time:invalid {
+          color: var(--content-secondary);
+        }
+
+        /* Estilo para as opções no dropdown */
+        & #time option {
+          background: var(--background-secondary);
+          color: var(--content-primary);
+        }
       }
       & .date {
         display: grid;
@@ -76,11 +100,16 @@
           gap: 0.5rem;
           & .input {
             border: 1px solid var(--border-primary);
-
             flex-direction: row;
             padding: 0.75rem;
           }
         }
+      }
+      & .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
       }
     }
   }

@@ -28,7 +28,7 @@
           </div>
           <div class="input">
             <i><img src="src/assets/Calendar.svg" alt="Calendário" /></i>
-            <input type="date" name="date" id="date" required />
+            <input type="date" name="date" id="dateCalendar" required />
           </div>
         </header>
       </main>
@@ -174,39 +174,37 @@
               <div>
                 <label for="date" class="label">Data</label>
                 <div class="input">
-                  <i><img src="./src/assets/calendar.svg" alt="Calendário" /></i>
+                  <i
+                    ><img src="./src/assets/calendar.svg" alt="Calendário"
+                  /></i>
                   <input type="date" id="date" name="date" required />
                 </div>
               </div>
               <div>
                 <label for="time" class="label">Hora</label>
                 <div class="input">
-                  <i><img src="./src/assets/Clock-Circle.svg" alt="Relógio" /></i>
-                  <input type="time" id="time" name="time" required />
+                  <i
+                    ><img src="./src/assets/Clock-Circle.svg" alt="Relógio"
+                  /></i>
+                  <select id="time" name="time" required>
+                    <option value="" disabled selected>
+                      Selecione um horário
+                    </option>
+                    <!-- As opções de horário serão inseridas aqui via JavaScript -->
+                  </select>
                 </div>
               </div>
             </div>
-            <button class="close-modal" data-close-modal>Fechar</button>
+            <div class="buttons">
+              <button type="button" class="close-modal" data-close-modal>
+                Fechar
+              </button>
+              <button type="submit" class="close-modal">Agendar</button>
+            </div>
           </form>
         </div>
       </div>
     </div>
-    <script>
-      document.querySelector(".open-modal").addEventListener("click", () => {
-        document
-          .getElementById("schedule-modal")
-          .setAttribute("aria-hidden", "false");
-      });
-
-      document.querySelectorAll("[data-close-modal]").forEach((el) => {
-        el.addEventListener("click", () => {
-          document
-            .getElementById("schedule-modal")
-            .setAttribute("aria-hidden", "true");
-        });
-      });
-
-      
-    </script>
+    <script></script>
   </body>
 </html>
