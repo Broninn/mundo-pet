@@ -1,13 +1,18 @@
-document.querySelector(".open-modal").addEventListener("click", () => {
-  document
-    .getElementById("schedule-modal")
-    .setAttribute("aria-hidden", "false");
+import { initializeModalValues } from "../modules/form/hours.js";
+
+const openModalButton = document.querySelector(".open-modal");
+const closeModalButtons = document.querySelectorAll("[data-close-modal]");
+const modal = document.querySelector("#schedule-modal");
+
+openModalButton.addEventListener("click", () => {
+  // Define a data para hoje e atualiza os horários disponíveis
+  initializeModalValues();
+  modal.setAttribute("aria-hidden", "false");
 });
 
-document.querySelectorAll("[data-close-modal]").forEach((el) => {
+closeModalButtons.forEach((el) => {
   el.addEventListener("click", () => {
-    document
-      .getElementById("schedule-modal")
-      .setAttribute("aria-hidden", "true");
+    modal.setAttribute("aria-hidden", "true");
   });
 });
+

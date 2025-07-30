@@ -87,6 +87,10 @@
           background: var(--background-secondary);
           color: var(--content-primary);
         }
+        & #time option:disabled {
+          color: var(--content-tertiary);
+          cursor: not-allowed;
+        }
       }
       & .date {
         display: grid;
@@ -107,7 +111,7 @@
       }
       & .buttons {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         gap: 1rem;
       }
