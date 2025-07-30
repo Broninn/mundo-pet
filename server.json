@@ -1,60 +1,28 @@
 {
   "schedules": [
     {
-      "id": "1753447729588",
-      "name": "Bruno",
+      "id": 1753888995053,
+      "name": "Michelle",
       "pet": "Pandora",
       "phoneClient": "41 991012987",
-      "service": "Chip",
-      "when": "2025-07-25T13:00:00.000Z"
-    },
-    {
-      "id": "1753448600386",
-      "name": "Michelle",
-      "pet": "Selena",
-      "phoneClient": "41 991669716",
       "service": "Queimou as patas com soda caustica",
-      "when": "2025-07-25T13:30:00.000Z"
-    },
-    {
-      "id": "2025-07-25T13:05:26.210Z",
-      "name": "teste",
-      "pet": "teste",
-      "phoneClient": "teste",
-      "service": "teste",
-      "when": "2025-07-25T13:30:00.000Z"
-    },
-    {
-      "id": "1753449548586",
-      "name": "teste2",
-      "pet": "teste2",
-      "phoneClient": "teste2",
-      "service": "teste2",
-      "when": "2025-07-25 17:30"
-    },
-    {
-      "id": "1753457055773",
-      "name": "Wesley",
-      "pet": "Cachorro",
-      "phoneClient": "41 95959595",
-      "service": "Banho",
-      "when": "2025-07-26 09:30"
-    },
-    {
-      "id": 1753880951613,
-      "name": "Michelle",
-      "pet": "Simba",
-      "phoneClient": "41 991012987",
-      "service": "Cortar o rabo atropelad",
       "when": "2025-07-30 13:00"
     },
     {
-      "id": 1753881443674,
+      "id": 1753889033716,
       "name": "Michelle",
-      "pet": "Pandora",
+      "pet": "Selena",
       "phoneClient": "41 991012987",
-      "service": "dfsd fdf ds fsd",
-      "when": "2025-07-30 13:30"
+      "service": "teste",
+      "when": "2025-07-31 09:00"
+    },
+    {
+      "id": 1753889116461,
+      "name": "Michelle",
+      "pet": "t2refsvv",
+      "phoneClient": "41 95959595",
+      "service": "sda dasd as da",
+      "when": "2025-07-31 20:00"
     }
   ]
 }

@@ -60,6 +60,7 @@ aside {
           list-style: none;
           font-size: var(--fs-md);
           text-decoration: none;
+          cursor: pointer;
           color: var(--content-secondary);
           &:hover {
             color: var(--background-highlights);

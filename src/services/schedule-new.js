@@ -1,4 +1,5 @@
 import { apiConfig } from "./api-config.js";
+import { schedulesDay } from "../modules/schedules/load.js";
 
 export async function scheduleNew(data) {
   try {
@@ -14,6 +15,7 @@ export async function scheduleNew(data) {
       throw new Error("Não foi possível agendar");
     }
     alert("Agendamento realizado com sucesso!");
+    schedulesDay();
   } catch (error) {
     console.log(error);
     alert("Não foi possível agendar, tente novamente mais tarde");

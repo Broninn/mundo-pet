@@ -10,10 +10,6 @@ const serviceDetails = document.querySelector("#input-service-name");
 const selectedDate = document.querySelector("#date");
 const selectedTime = document.querySelector("#time");
 
-// const inputToday = dayjs(new Date()).format("YYYY-MM-DD");
-// selectedDate.value = inputToday;
-// selectedDate.min = inputToday;
-
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
   try {
