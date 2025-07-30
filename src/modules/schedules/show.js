@@ -8,7 +8,6 @@ const periodNight = document.getElementById("period-night");
 
 export function schedulesShow({ dailySchedules }) {
   try {
-    console.log(dailySchedules);
 
     // Limpa as listas
     periodMorning.innerHTML = "";

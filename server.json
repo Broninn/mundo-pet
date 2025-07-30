@@ -1,28 +1,12 @@
 {
   "schedules": [
     {
-      "id": 1753888995053,
+      "id": 1753896137540,
       "name": "Michelle",
       "pet": "Pandora",
       "phoneClient": "41 991012987",
-      "service": "Queimou as patas com soda caustica",
-      "when": "2025-07-30 13:00"
-    },
-    {
-      "id": 1753889033716,
-      "name": "Michelle",
-      "pet": "Selena",
-      "phoneClient": "41 991012987",
-      "service": "teste",
-      "when": "2025-07-31 09:00"
-    },
-    {
-      "id": 1753889116461,
-      "name": "Michelle",
-      "pet": "t2refsvv",
-      "phoneClient": "41 95959595",
-      "service": "sda dasd as da",
-      "when": "2025-07-31 20:00"
+      "service": "Chip",
+      "when": "2025-07-30 15:30"
     }
   ]
 }

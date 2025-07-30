@@ -1,6 +1,7 @@
 import dayjs from "dayjs";
 import { scheduleFetchByDay } from "../../services/schedule-fetch-by-day.js";
 import { schedulesShow } from "../schedules/show.js";
+import "./cancel.js";
 
 const selectedDate = document.getElementById("dateCalendar");
 

@@ -9,8 +9,11 @@ export async function scheduleFetchByDay({ date }) {
     // Converte para JSON
     const data = await response.json();
 
+    // Ordenando por data
+    const ordenedData = data.sort((a, b) => new Date(a.when) - new Date(b.when));
+
     // Filtra os agendamentos pelo dia selecionado
-    const dailySchedules = data.filter((schedule) =>
+    const dailySchedules = ordenedData.filter((schedule) =>
       dayjs(date).isSame(schedule.when, "day")
     );
 
